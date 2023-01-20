@@ -13,7 +13,7 @@
         <input type="search" v-model="citySearch"
           class="w-full px-2 py-3 text-lg text-black rounded-l-lg bg-inherit focus:outline-none sm:py-0"
           placeholder="Entrer une ville">
-        <button type="submit" class="px-3 text-xl text-green-700 rounded-r-md">
+        <button type="submit" title="Recherche" class="px-3 text-xl text-green-700 rounded-r-md">
           <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
         </button>
       </form>
