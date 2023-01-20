@@ -9,7 +9,7 @@
         <span class="my-auto"> Weather App</span>
       </div>
       <form method="get" v-on:submit.prevent="getWeather"
-        class="flex my-2 ml-auto rounded-lg shadow-lg bg-slate-100 w-96 h-2/3 sm:my-auto">
+        class="flex my-2 md:ml-auto md:mr-0 mx-auto rounded-lg shadow-lg bg-slate-100 w-80 h-2/3 sm:my-auto">
         <input type="search" v-model="citySearch"
           class="w-full px-2 py-3 text-lg text-black rounded-l-lg bg-inherit focus:outline-none sm:py-0"
           placeholder="Entrer une ville">
@@ -29,19 +29,19 @@
     <div
       class="container grid-cols-2 px-10 py-16 mx-auto text-white shadow-xl sm:grid shadow-gray-900 bg-glass rounded-2xl">
 
-      <section class="mx-10">
+      <section class="lg:mx-10">
         <div class="flex justify-between">
           <p class="text-2xl">{{ weather.date }}</p>
           <p class="text-2xl">{{ weather.cityName }}, {{ weather.country }}</p>
         </div>
-        <div class="flex ml-20 mt-14">
+        <div class="flex lg:ml-16 mt-14">
           <img :src="icon + weather.icon + '@2x.png'" class="my-auto w-36" v-if="weather.temperature" alt="">
           <p class="my-auto ml-5 text-7xl">{{ weather.temperature }}&deg;C</p>
         </div>
         <p class="text-2xl text-center mb-14 mt-7"> <em>{{ weather.description }}</em> </p>
 
       </section>
-      <section class="mx-10 mt-20 sm:mt-0">
+      <section class="mx-7 mt-20 sm:mt-0">
         <p class="w-16 mx-auto mb-10 text-4xl border-b-4">Détails</p>
         <div class="mt-5">
           <div class="flex justify-between mt-3">
