@@ -87,7 +87,7 @@ export default {
 
       citySearch: "london",
       error: false,
-      icon: "http://openweathermap.org/img/wn/",
+      icon: "https://openweathermap.org/img/wn/",
       weather: [],
 
     }
@@ -97,7 +97,7 @@ export default {
 
     getWeather: function () {
       const key = "5952f97a35c986e11c8deae41ac55fe0";
-      axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&lang=fr&units=metric`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${this.citySearch}&appid=${key}&lang=fr&units=metric`)
         .then(reponse => {
           // console.log(reponse.data);
           this.weather.cityName = reponse.data.name;
