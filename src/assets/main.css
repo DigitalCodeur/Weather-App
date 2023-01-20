@@ -7,7 +7,7 @@
 @layer utilities {
 
   .bg-img {
-    background-image: url('./src/assets/img.jpg');
+    background-image: url('/src/assets/img.jpg');
     height: 100vh;
     /* background-position: center; */
     background-repeat: no-repeat;
